@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "updated": "2026-11-03",
+  "regions": [
+    {"id": "nae", "name": {"en": "NA East", "es": "NA Este"}, "serverTimeZone": "America/New_York", "verified": true},
+    {"id": "naw", "name": {"en": "NA West", "es": "NA Oeste"}, "serverTimeZone": "America/Los_Angeles", "verified": false},
+    {"id": "eu", "name": {"en": "Europe", "es": "Europa"}, "serverTimeZone": "Europe/Paris", "verified": false}
+  ],
+  "events": [
+    {
+      "id": "rift", "symbol": "tornado",
+      "name": {"en": "Spacetime Rift", "es": "Grieta espacio-temporal"},
+      "times": ["02:00", "05:00", "08:00", "11:00", "14:00", "17:00", "20:00", "23:00"],
+      "durationMinutes": 10, "leadMinutes": 10, "notifyByDefault": true, "verified": true, "liveActivity": true
+    },
+    {
+      "id": "shugo", "symbol": "party.popper",
+      "name": {"en": "Shugo Festival sign-up", "es": "Festival Shugo (inscripción)"},
+      "everyHourAtMinute": 0,
+      "durationMinutes": 5, "leadMinutes": 5, "notifyByDefault": false, "verified": true
+    },
+    {
+      "id": "daily_reset", "symbol": "arrow.clockwise",
+      "name": {"en": "Daily reset", "es": "Reinicio diario"},
+      "times": ["03:00"],
+      "leadMinutes": 60, "notifyByDefault": true, "verified": false
+    },
+    {
+      "id": "weekly_reset", "symbol": "calendar",
+      "name": {"en": "Weekly reset", "es": "Reinicio semanal"},
+      "weekdays": [4], "times": ["03:00"],
+      "leadMinutes": 180, "notifyByDefault": true, "verified": false
+    },
+    {
+      "id": "kaira", "symbol": "eye",
+      "name": {"en": "Watcher Kaira (Abyss)", "es": "Vigía Kaira (Abismo)"},
+      "times": ["00:00", "03:00", "06:00", "09:00", "12:00", "15:00", "18:00", "21:00"],
+      "leadMinutes": 10, "notifyByDefault": false, "verified": false
+    },
+    {
+      "id": "executors", "symbol": "shield.lefthalf.filled",
+      "name": {"en": "Abyss Executors", "es": "Ejecutores del Abismo"},
+      "weekdays": [2, 5, 7], "times": ["08:30"],
+      "leadMinutes": 15, "notifyByDefault": false, "verified": false
+    },
+    {
+      "id": "siege", "symbol": "building.columns",
+      "name": {"en": "Abyss Siege Boss", "es": "Jefe de asedio del Abismo"},
+      "weekdays": [6, 1], "times": ["08:00"],
+      "leadMinutes": 15, "notifyByDefault": false, "verified": false
+    }
+  ]
+}
